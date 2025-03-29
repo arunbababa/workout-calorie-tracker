@@ -3,4 +3,5 @@ export type BodyPartMenu = {
   time: number
   calories: number
   icon?: string
+  onClickPart?:(part:string) => void
 }
