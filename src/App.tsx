@@ -3,6 +3,7 @@ import Header from './components/Header'
 import TotalCalories from './components/TotalCalories'
 import './index.css'
 
+// timeとcaloriesは状態管理として持つべき、もっと子供のコンポーネントで入力するから、appに戻った際にuseeffectでsupabaseからとってくる感じになるかなぁ
 function App() {
 
   return (
@@ -15,8 +16,6 @@ function App() {
           <BodyPartMenu name="脚" time={15} calories={105} icon="🏋️" />
           <BodyPartMenu name="腕" time={10} calories={90} icon="🏋️" />
           <BodyPartMenu name="胸" time={12} calories={110} icon="🏋️" />
-          <BodyPartMenu name="ある" time={12} calories={110} icon="🏋️" />
-          <BodyPartMenu name="んば" time={12} calories={110} icon="🏋️" />
         </div>
       </div>
     </>

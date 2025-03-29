@@ -1,16 +1,11 @@
-type Props = {
-  name: string
-  time: number
-  calories: number
-  icon?: string
-}
+import type { BodyPartMenu } from "../types/bodyPartMenu"
 
-export default function WorkoutItem({
+export default function BodyPartMenu({
   name,
   time,
   calories,
   icon = '🏋️',
-}: Props) {
+}:BodyPartMenu) {
   return (
     <div className="bg-white rounded-xl shadow flex flex-col p-4 transition hover:bg-blue-50 hover:shadow-lg">
       {/* 上：アイコンと名前 */}
