@@ -1,4 +1,4 @@
-import type { BodyPartMenu } from "../types/bodyPartMenu"
+import type { BodyPartMenu } from "../../types/bodyPartMenu"
 
 // Appから渡される以下立ちだが、timeとcaloriesは状態管理として持つべき
 
@@ -8,7 +8,6 @@ export default function BodyPartMenu({
   calories,
   icon = '🏋️',
   onClickPart
-
 }:BodyPartMenu) {
   return (
     <div className="bg-white rounded-xl shadow flex flex-col p-4 transition hover:bg-blue-50 hover:shadow-lg cursor-pointer" onClick={() => onClickPart?.(name)}>

@@ -3,7 +3,7 @@ import { UserIcon } from './Header/UserIcon'
 import { PartnorIcon } from './Header/PartnorIcon'
 
 type Props = {
-  selectedPart:string, 
+  selectedPart:string | null, 
   onBack:() => void
 }
 

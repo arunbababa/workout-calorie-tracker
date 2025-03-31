@@ -1,6 +1,4 @@
-import React from 'react'
 import totalCalorie from '../types/totalCalorie'
-
 
 const TotalCalories = ({totalCalorie}:totalCalorie) => {
   return (
